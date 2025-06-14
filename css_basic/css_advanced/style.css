@@ -1,50 +1,357 @@
-footer{
-    background-color: #0F1B2A;
-}
-.Foot{
-    display: flex;
-    text-align: center;
-    margin-left: 60px;
-    padding-top: 50px;
-}
-.icon{
-    margin-left: auto;
-    color: #FFFFFF;
-    margin-right: 60px;
-}
-footer,p{
-    text-align: center;
-    text-decoration: none;
-    padding-bottom: 3px;
-    color: #8B8D96 ;
-}
-h2{
-    text-align: center;
-    font-size: 1.4rem;
-    color: #111;
-}
-.faqcontainer{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
-}
-.container {
- display: grid;
- grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
- background-color:#f9f9f9 ;
+main section:first-of-type {
+  background: url("./images/object.png") no-repeat center center;
+  background-size: cover;
+  text-align: center;
+  padding: 100px 20px;
+  color: #fff;
 }
 
-.box {
-    background-color: #f9f9f9;
-    padding: 25px;
-  
+main section:first-of-type h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  font-weight: 700;
 }
-h3{
-    margin-left: 20px;
-    
+
+main section:first-of-type span {
+  display: inline-block;
+  margin: 10px;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 500;
 }
-.box p {
-    font-size: 1rem;
-    color: #666;
-    line-height: 1.6;
+
+main section:first-of-type button {
+  margin-top: 30px;
+  padding: 15px 30px;
+  font-size: 16px;
+  border: none;
+  background-color: #c271ff;
+  color: white;
+  font-weight: bold;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+main section:first-of-type button:hover {
+  background-color: #a04fd3;
+}
+
+/* Learn from the pros */
+main section:nth-of-type(1) h2 {
+  margin-top: 60px;
+  margin-bottom: 20px;
+  font-size: 28px;
+  color: #071629;
+}
+
+main section:nth-of-type(1) > div > div {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+main section:nth-of-type(1) > div > div > div {
+  text-align: center;
+}
+
+main section:nth-of-type(1) img {
+  border-radius: 50%;
+  height: 120px;
+  width: 120px;
+  object-fit: cover;
+}
+
+.quote-section {
+  background-color: #C271FF;
+  padding: 60px 20px;
+  text-align: center;
+  color: white;
+}
+
+.quote-container {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.quote-image {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 30px;
+}
+
+.quote-text {
+  max-width: 600px;
+  text-align: left;
+}
+
+.quote {
+  font-size: 20px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.quote-name {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.quote-title {
+  font-style: italic;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+/* Tutorials Section */
+main section:nth-of-type(3) {
+  background-color: #f5f5f5;
+  padding: 60px 20px;
+}
+
+.popular {
+  background-color: white;
+  padding: 60px 40px;
+  text-align: center;
+}
+
+.popular h2 {
+  font-size: 28px;
+  color: #071629;
+}
+
+.popular h2 span {
+  color: #C271FF;
+}
+
+.video-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.video-card {
+  width: 22%;
+  text-align: left;
+}
+
+.video-image {
+  position: relative;
+}
+
+.video-image img:first-child {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.play-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 50px;
+  transform: translate(-50%, -50%);
+}
+
+.video-card h3 {
+  font-size: 16px;
+  margin: 10px 0 5px;
+}
+
+.video-card p {
+  font-size: 14px;
+  color: #aaa;
+  margin: 0 0 10px;
+}
+
+.video-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.author img {
+  width: 30px;
+  border-radius: 50%;
+}
+
+.author h4 {
+  font-size: 14px;
+  color: #C271FF;
+}
+
+
+/* Membership Section */
+main section:nth-of-type(4) {
+  background-color: #071629;
+  background-image: none; / 
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+}
+main section:nth-of-type(4) h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+  font-weight: 300;
+}
+
+main section:nth-of-type(4) h2 span {
+  color: #C271FF;
+  font-weight: bold;
+}
+
+main section:nth-of-type(4) .card {
+  display: inline-block;
+  margin: 20px;
+  max-width: 200px;
+}
+
+main section:nth-of-type(4) img {
+  height: 50px;
+}
+
+main section:nth-of-type(4) h3 {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+main section:nth-of-type(4) p {
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+main section:nth-of-type(4) button {
+  padding: 15px 30px;
+  font-size: 16px;
+  border: none;
+  background-color: #c271ff;
+  color: white;
+  font-weight: bold;
+  border-radius: 30px;
+  cursor: pointer;
+}
+main section:nth-of-type(4) .register-wrapper {
+  margin-top: 40px;
+}
+main section:nth-of-type(4) .card h3 {
+  color: #fff; 
+}
+
+main section:nth-of-type(4) .card p {
+  color: rgba(255, 255, 255, 0.6); 
+}
+
+/* FAQ Section */
+.faq {
+  background-color: #ffffff;
+  padding: 80px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.faq h2 {
+  font-size: 32px;
+  font-weight: bold;
+  color: #071629;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.faq-item {
+  max-width: 920px;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.faq-item h3 {
+  font-size: 20px;
+  color: #071629;
+  font-weight: 600;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.faq-item p {
+  font-size: 16px;
+  color: rgba(7, 22, 41, 0.9);
+  line-height: 1.6;
+  text-align: left;
+}
+.faq-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px 60px;
+  max-width: 920px;
+  width: 100%;
+}
+
+
+/* Footer */
+.footer {
+  background-color: #071629;
+  color: white;
+  padding: 60px 0;
+  position: relative;
+  width: 100%;
+}
+
+.footer-container {
+  width: 90%;
+  max-width: 1440px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.footer-logo {
+  position: absolute;
+  left: 11.46%;
+  top: 38%;
+  transform: translateY(-50%);
+}
+
+.footer-logo img {
+  width: 40px; 
+  height: auto;
+}
+
+.footer-brand {
+  position: absolute;
+  left: 32.54%;
+  top: 50%;
+  transform: translateY(-50%);
+  font-family: 'Coiny', cursive;
+  font-size: 18px;
+  color: white;
+}
+
+.footer-socials {
+  position: absolute;
+  right: 7%;
+  top: 36%;
+  display: flex;
+  gap: 20px;
+}
+
+.footer-socials img {
+  width: 30px;
+  height: 30px;
+}
+
+.footer-copy {
+  text-align: center;
+  font-size: 12px;
+  opacity: 0.35;
+  margin-top: 100px;
 }
