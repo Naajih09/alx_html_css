@@ -1,3 +1,41 @@
+/* Style the header */
+header {
+  background-image: url('./images/Object.png'); 
+  background-size: cover;
+  background-position: center;
+  height: 10vh; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Style the logo */
+nav img {
+  height: 40px; 
+}
+/* Style the navigation links */
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white; 
+  font-size: 16px; 
+}
 main section:first-of-type {
   background: url("./images/object.png") no-repeat center center;
   background-size: cover;
