@@ -1,0 +1,19 @@
+footer{
+    background-color: #0F1B2A;
+}
+.Foot{
+    display: flex;
+    text-align: center;
+    margin-left: 60px;
+    padding-top: 50px;
+}
+.icon{
+    margin-left: 200px;
+    color: #FFFFFF;
+}
+footer,p{
+    text-align: center;
+    text-decoration: none;
+    padding-bottom: 3px;
+    color: #8B8D96 ;
+}
