@@ -1,0 +1,377 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Variables */
+:root {
+  --primary-color: #e50914;
+  --hover-color: #bf0811;
+  --nav-hover: #6e0606;
+  --text-color: #ffffff;
+  --font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Base Styles */
+body, html {
+  height: 100%;
+  font-family: var(--font);
+  color: var(--text-color);
+}
+
+/* Hero Background */
+.hero {
+  background: url('images/headphones_hero_1.jpg') no-repeat center center/cover;
+  height: 100vh;
+  position: relative;
+}
+
+/* Top Bar */
+.top-bar {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding: 1.5rem 2rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 10;
+}
+
+.logo {
+  font-size: 1.6rem;
+  color: var(--text-color);
+}
+
+.navbar a {
+  margin-left: 1.5rem;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+  margin-right: 1.5rem;
+}
+
+.navbar a:hover {
+  color: var(--nav-hover);
+}
+
+/* Overlay Layer */
+.overlay {
+  background-color: var(--overlay-color);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* Hero Content */
+.hero-content {
+  max-width: 800px;
+}
+
+.hero-content h1 {
+  font-size: 2.7rem;
+  margin-bottom: 1rem;
+}
+
+.subtext {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  color: #ffffff;
+}
+h1{
+    color: #ffffff;
+}
+
+.cta-button {
+  background-color: var(--primary-color);
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: var(--hover-color);
+}
+
+.bottom-text {
+  margin-top: 2rem;
+  font-size: 0.95rem;
+  color: #ffffff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .top-bar {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .navbar a {
+    margin-left: 0.8rem;
+    font-size: 0.95rem;
+  }
+
+  .cta-button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-content h1 {
+    font-size: 1.5rem;
+  }
+
+  .subtext {
+    font-size: 0.95rem;
+  }
+
+  .bottom-text {
+    font-size: 0.85rem;
+    color: #ffffff;
+  }
+}
+
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #ffffff;
+  color: #333;
+}
+
+.what-we-do {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #fff;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.what-we-do h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.description {
+  max-width: 800px;
+  margin: 0 auto 50px;
+  font-size: 14px;
+  color: #555;
+  line-height: 1.6;
+}
+
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.service-box {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 220px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.service-box:hover {
+  transform: translateY(-8px);
+}
+
+.service-box i {
+  font-size: 40px;
+  color: #ff4b5c; /* Coral/red color */
+  margin-bottom: 15px;
+}
+
+.service-box h3 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.service-box p {
+  font-size: 13px;
+  color: #666;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .services {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.results-section {
+  background: url('background.jpg') no-repeat center center/cover;
+  position: relative;
+  padding: 80px 20px;
+  color: white;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.7); /* Dark transparent layer */
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.content h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.content p {
+  max-width: 700px;
+  margin: 0 auto 50px;
+  font-size: 14px;
+  color: #ccc;
+  line-height: 1.6;
+}
+
+.stats {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.stat-box {
+  text-align: center;
+}
+
+.pentagon {
+  position: relative;
+  width: 120px;
+  height: 100px;
+  background: #ff5e63;
+  clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.value {
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.label {
+  font-size: 12px;
+  color: #fff;
+  margin-top: 4px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .stats {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+.contact-section {
+  
+  padding: 50px 30px;
+  text-align: center;
+  animation: fadeInUp 1s ease-out;
+}
+
+.input-group {
+  margin-bottom: 20px;
+  animation: slideIn 0.6s ease-in-out;
+}
+
+input, textarea {
+  padding: 12px;
+  width: 100%;
+  max-width: 500px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+button {
+  background-color: #b81d1d;
+  color: white;
+  padding: 14px 32px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+button:hover {
+  background-color: #883d3d;
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideIn {
+  from { opacity: 0; transform: translateX(-30px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+.site-footer {
+  background-color: #1d1d1d;
+  color: #fff;
+  padding: 20px 40px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-logo {
+  width: 300px;
+  height: 50px;
+}
+
+.footer-right .social-icon {
+  margin-left: 15px;
+  color: #ccc;
+  text-decoration: none;
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+
+.footer-right .social-icon:hover {
+  color: #ffffff;
+}
